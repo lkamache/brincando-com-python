@@ -31,7 +31,7 @@ try:
 	    		GPIO.output(21, True)
 		    	sleep(0.06)
 		    	GPIO.output(21, False)
-		    	sleep(1)
+		    	sleep(0.5)
 
 	client = mqtt.Client()
 	client.on_connect = on_connect
