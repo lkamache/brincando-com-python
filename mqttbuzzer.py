@@ -20,7 +20,7 @@ def on_message(client, userdata, msg):
 
 		beeps = int(msg.payload)
 
-		if beeps > 5:
+		if beeps > 10:
 			GPIO.output(21, True)
 			sleep(0.06)
 			GPIO.output(21, False)
